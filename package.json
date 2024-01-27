@@ -1,0 +1,21 @@
+{
+  "name": "tareas2-lab1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "espress": "^0.0.0",
+    "pg": "^8.11.3",
+    "pg-promise": "^11.5.4",
+    "pgp": "^0.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  }
+}
