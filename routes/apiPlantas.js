@@ -21,10 +21,20 @@ planta.get('', async (req,res)=>{
 
 })
 
-planta.post('', (req,res)=>{
+planta.post('', async (req,res)=>{
 
+    const { nombre, tipo } = req.body;
 
+    const params = [nombre, tipo];
 
+    const sql = `insert into tbl_planta
+                (nombre, tipo)
+                values
+                ($1, $2) returning * `
+
+    const result = await db.query(sql, params);
+
+    res.json(result);
 })
 
 export { planta }

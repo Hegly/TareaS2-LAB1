@@ -14,4 +14,4 @@ VALUES
 ('Mango', 'Frutal'),
 ('Zacate de Limón', 'Medicinal');
 
-SELECT*FROM tbl_planta
+SELECT*FROM tbl_planta 
